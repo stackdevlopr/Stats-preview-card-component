@@ -1,0 +1,199 @@
+/* === === === === === ==> ::: ::: FONTS IMPORT ::: ::: <== === === === === === */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+:root {
+  --crl-primary1: hsl(233, 47%, 7%);
+  --clr-primary2: hsl(244, 38%, 16%);
+  --clr-primary3: hsl(277, 64%, 55%);
+  --clr-neutral1: hsl(0, 0%, 100%);
+  --clr-neutral2: hsla(0, 0%, 100%, 0.75);
+  --clr-neutral3: hsla(0, 0%, 100%, 0.6);
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Lexend Deca", sans-serif;
+}
+
+/* === === === === === ==> ::: ::: CSS RESET ::: ::: <== === === === === === */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* === === === === === ==> ::: ::: BODY ::: ::: <== === === === === === */
+body {
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 400;
+  background-color: var(--crl-primary1);
+  color: var(--clr-neutral1);
+}
+
+/* === === === === === ==> ::: ::: MAIN ::: ::: <== === === === === === */
+.main {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* === === === === === ==> ::: ::: CARD__CONTAINER ::: ::: <== === === === === === */
+.card__container {
+  max-width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  margin-block: 50px;
+}
+
+@media only screen and (orientation: landscape) {
+  .card__container {
+    margin-block: 100px;
+  }
+}
+/* === === === === === ==> ::: ::: RIGHT__CONTAINER ::: ::: <== === === === === === */
+.right__container {
+  border-radius: 5px 5px 0 0;
+  background-color: var(--clr-primary3);
+}
+
+.right__container img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 5px 5px 0 0;
+  background-blend-mode: overlay;
+  opacity: 0.6;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+/* === === === === === ==> ::: ::: LEFT__CONTAINER ::: ::: <== === === === === === */
+.left__container {
+  padding: 20px;
+  background-color: var(--clr-primary2);
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+}
+
+.text__container h1 {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.text__container span {
+  color: var(--clr-primary3);
+}
+
+.text__container p {
+  margin-bottom: 20px;
+  color: var(--clr-neutral2);
+  line-height: 1.5;
+  font-size: 19px;
+}
+
+.stats__container div {
+  margin-block: 25px;
+}
+
+.stats__title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.stats p {
+  color: var(--clr-neutral3);
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+@media only screen and (min-width: 1200px) {
+  /* === === === === === ==> ::: ::: MAIN ::: ::: <== === === === === === */
+  .main {
+    height: 100vh;
+  }
+
+  /* === === === === === ==> ::: ::: CARD__CONTAINER ::: ::: <== === === === === === */
+  .card__container {
+    min-width: 1200px;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    padding-block: 20px;
+  }
+
+  /* === === === === === ==> ::: ::: RIGHT__CONTAINER ::: ::: <== === === === === === */
+  .right__container {
+    width: 540px;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+  }
+
+  .right__container img {
+    max-width: 100%;
+    height: 100%;
+    border-radius: 0 5px 5px 0;
+    display: block;
+  }
+
+  /* === === === === === ==> ::: ::: LEFT__CONTAINER ::: ::: <== === === === === === */
+  .left__container {
+    width: 660px;
+    height: 100%;
+    text-align: left;
+    border-radius: 5px 0 0 5px;
+    padding: 45px;
+  }
+
+  .text__container {
+    max-width: 100%;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text__container h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    padding: 10px;
+    max-width: 85%;
+  }
+
+  .text__container p {
+    margin-bottom: 50px;
+    padding: 10px;
+    color: var(--clr-neutral2);
+    line-height: 1.5;
+    font-size: 20px;
+    max-width: 85%;
+  }
+
+  .stats__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    margin: auto auto;
+  }
+
+  .stats__title {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+
+  .stats p {
+    color: var(--clr-neutral3);
+    font-family: var(--font-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 13px;
+  }
+}/*# sourceMappingURL=main.css.map */
